@@ -2,7 +2,16 @@
 A macOS implementation of the uni_links package for Flutter
 
 ## Installation
-To set up the links in your Xcode project you can just follow the [for iOS](https://github.com/avioli/uni_links/tree/master/uni_links#for-ios) section in the `uni_links` package.
+Add the following to your `pubspec.yaml`:
+```yaml
+dependencies:
+    # ... your other dependencies
+    uni_links2: ^0.6.0+2
+    uni_links_macos:
+        git: https://github.com/SamJakob/uni_links_macos.git
+```
+
+Then, to set up the links in your Xcode project you can just follow the [for iOS](https://github.com/avioli/uni_links/tree/master/uni_links#for-ios) section in the `uni_links` package.
 
 ### NOTE:
 You will need to add a temporary workaround to bridge the delegate methods in the plugin to those of your app because `addApplicationDelegate` is not currently implemented on the Flutter Plugin registrant for macOS (see [flutter/flutter#41471](https://github.com/flutter/flutter/issues/41471)).
