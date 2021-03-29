@@ -1,0 +1,26 @@
+name: uni_links_macos
+description: A macOS implementation of the uni_links package for Flutter
+version: 0.0.1
+author: Sam Jakob Mearns <me@samjakob.com>
+homepage: https://samjakob.com/
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+  flutter: ">=2.0.3 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  uni_links2_platform_interface: ^1.0.0+2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    implements: uni_links
+    platforms:
+      macos:
+        pluginClass: UniLinksMacosPlugin

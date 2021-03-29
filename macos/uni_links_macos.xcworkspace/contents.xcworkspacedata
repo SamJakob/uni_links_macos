@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Classes">
+   </FileRef>
+   <FileRef
+      location = "group:uni_links_macos.podspec">
+   </FileRef>
+</Workspace>
